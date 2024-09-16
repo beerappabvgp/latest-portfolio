@@ -12,8 +12,17 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        roboto: ['var(--font-roboto-regular)', 'sans-serif'],
+        robotoBold: ['var(--font-roboto-bold)', 'sans-serif'],
+      },
+      screens: {
+        'xs': '480px',
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 };
 export default config;

@@ -5,6 +5,16 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-roboto-regular: 'Roboto Regular', sans-serif;
+  --font-roboto-bold: 'Roboto Bold', sans-serif;
+}
+
+.font-roboto-regular {
+  font-family: var(--font-roboto-regular);
+}
+
+.font-roboto-bold {
+  font-family: var(--font-roboto-bold);
 }
 
 @media (prefers-color-scheme: dark) {

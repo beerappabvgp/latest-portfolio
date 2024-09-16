@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { Description } from './Description';
 
-const name = "BHARATH B";
+const name = "BHARATH";
 const letters = name.split("");
 const colors = ['#FF6347', '#4682B4', '#32CD32', '#FFD700', '#6A5ACD', '#FF69B4', '#20B2AA', '#87CEEB', '#FF4500', '#DA70D6', '#1E90FF', '#00FF7F', '#FF8C00', '#8A2BE2', '#7FFF00', '#D2691E', '#ADFF2F'];
 
 
-export const Title = () => {
+export const  Title = () => {
   
   const [isCompleted , setIsCompleted] = useState(false);
   useEffect(() => {
@@ -38,20 +38,20 @@ export const Title = () => {
   };
 
   return (
-    <div className='flex flex-col items-center text-9xl'>
-        <div className='flex flex-col items-center mb-5 mt-10'>
-            <h1 className='text-6xl font-bold mb-5 text-blue-300'>Hello, I'm</h1>
-            <div className='flex gap-3'>
+    <div className='flex flex-col items-center text-4xl sm:text-4xl md:text-6xl mt-10 lg:text-6xl xl:text-7xl 2xl:text-8xl whitespace-nowrap gap-5 font-robotoBold'>
+        <div className='flex flex-col items-center justify-center mt-5 gap-5'>
+            <h1 className='font-extrabold text-blue-300 whitespace-nowrap '>HELLO I'M 👋</h1>
+            <div className='flex'>
                 <motion.div
-                    className='flex flex-wrap gap-3'
+                    className='flex'
                     variants={containerVariants}
                     initial="hidden"
                     animate="visible"
                 >
                     {letters.map((letter, index) => (
-                        <div
+                        <div  
                             key={index}
-                            className={`inline-block font-extrabold ${isCompleted ? "" : "border-2 border-yellow-200"} rounded-lg p-2  text-teal-300`}
+                            className={`inline-block font-extrabold ${isCompleted ? "" : "border-2 border-yellow-200"} rounded-lg p-0 md:p-2  text-teal-300 ml-2`}
                         >
                             <motion.span
                                 className="block shadow-lg"
@@ -64,7 +64,7 @@ export const Title = () => {
                 </motion.div>
             </div>
         </div>
-        <Description />
+      <Description />  
     </div>
   );
 };

@@ -9,16 +9,16 @@ interface Skill {
 
 export const SkillItem = ({ skill , color }: { skill: Skill , color: string }) => {
     return (
-      <div className={`relative ${color} rounded-2xl w-32 h-32 p-4`}> {/* Outer div with fixed width and height */}
+      <div className={`relative ${color} rounded-2xl w-[122px] h-[122px] p-4`}> {/* Outer div with fixed width and height */}
         <motion.div 
           whileHover={{ scale: 1.1 }}  // Animation on hover
           whileTap={{ scale: 0.95 }}    // Animation on tap
-          className="absolute top-[-10px] left-[-10px] flex flex-col items-center bg-white p-4 rounded-2xl shadow-lg w-full h-full"
+          className="absolute top-[-10px] left-[-10px] flex flex-col items-center bg-white p-4 rounded-2xl shadow-lg w-full h-full overflow-hidden"
         >
           <Image 
             src={skill.img} 
             alt={skill.title} 
-            className="rounded-full mb-2" 
+            className="rounded-full mb-2  h-[40px] w-[40px] container "  
             width={40} 
             height={40} 
           />
