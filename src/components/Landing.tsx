@@ -2,6 +2,7 @@
 
 import { Navbar } from "./Navbar";
 import { ProfileImage } from "./ProfileImage";
+import { Separator } from "./Separator";
 import { Skills } from "./Skills";
 import { Title } from "./Title";
 
@@ -17,6 +18,7 @@ export const Landing = () => {
                  <ProfileImage width={400} height={350} start={0} duration={2} movement={10}/>
                 <Title />
             </div>  
+            {/* <Separator /> */}
             {/* <div className="mt-6 border-b-2 text-sm border-cyan-300"></div> */}
             <Skills />
         </>

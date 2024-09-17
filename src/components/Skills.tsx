@@ -59,8 +59,10 @@ export const Skills = () => {
 
     
     return (
-        <div className="space-y-8 mt-2 w-full overflow-x-hidden max-w-[100vw]">
-            <SkillTitle />
+        <div className="space-y-8 mt-2 overflow-x-hidden max-w-[100vw]" id='skills'>
+            <div className='p-4'>
+                <SkillTitle />
+            </div>
             {skills.reduce((rows: any[], skill, index) => {
                 const rowIndex = Math.floor(index / columns);
                 const direction = rowIndex % 2 === 0 ? 'left' : 'right'; 

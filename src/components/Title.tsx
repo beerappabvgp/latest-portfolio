@@ -38,10 +38,10 @@ export const  Title = () => {
   };
 
   return (
-    <div className='flex flex-col items-center text-4xl sm:text-4xl md:text-6xl mt-10 lg:text-6xl xl:text-7xl 2xl:text-8xl whitespace-nowrap gap-5 font-robotoBold'>
+    <div className='flex flex-col items-center text-4xl sm:text-4xl md:text-6xl mt-10 lg:text-6xl xl:text-7xl 2xl:text-8xl whitespace-nowrap gap-5'>
         <div className='flex flex-col items-center justify-center mt-5 gap-5'>
-            <h1 className='font-extrabold text-blue-300 whitespace-nowrap '>HELLO I'M 👋</h1>
-            <div className='flex'>
+            <h1 className='font-extrabold text-blue-300 whitespace-nowrap font-suse'>HELLO I'M 👋</h1>
+            <div className='flex justify-center items-center'>
                 <motion.div
                     className='flex'
                     variants={containerVariants}

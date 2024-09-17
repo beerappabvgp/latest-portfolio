@@ -17,7 +17,7 @@ export const Role = () => {
     }, []); 
 
     return (
-        <h2 className='text-3xl sm:text-4xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-extralight mb-4 text-purple-300 font-robotoBold'>
+        <h2 className='text-3xl sm:text-4xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-extralight mb-4 text-purple-300'>
             SOFTWARE ENGINEER
         </h2>
     );

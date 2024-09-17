@@ -11,10 +11,16 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        customPink: '#d946ef' 
       },
       fontFamily: {
-        roboto: ['var(--font-roboto-regular)', 'sans-serif'],
-        robotoBold: ['var(--font-roboto-bold)', 'sans-serif'],
+        poppins: ['var(--font-poppins)', 'sans-serif'], // Apply Poppins
+        playfair: ['var(--font-playfair)', 'serif'], // Apply Playfair Display
+        kode: ['var(--font-kode)', 'serif'],
+        roboto: ['var(--font-roboto)' , 'sans-serif'],
+        shan: ['var(--font-shan)' , 'sans-serif'],
+        mclaren: ['var(--font-mclaren)' , 'sans-serif'],
+        handlee: ['var(--font-handlee)' , 'serif'],
       },
       screens: {
         'xs': '480px',

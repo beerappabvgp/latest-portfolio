@@ -2,11 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family: 'SUSE';
+  src: url('/fonts/SUSE/static/SUSE-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SUSE';
+  src: url('/fonts/SUSE/static/SUSE-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
   --font-roboto-regular: 'Roboto Regular', sans-serif;
   --font-roboto-bold: 'Roboto Bold', sans-serif;
+  --font-suse: 'SUSE', sans-serif;
 }
 
 .font-roboto-regular {
@@ -24,11 +40,16 @@
   }
 }
 
+.font-suse {
+  font-family: var(--font-suse);
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-suse);
 }
+
 
 @layer utilities {
   .text-balance {
