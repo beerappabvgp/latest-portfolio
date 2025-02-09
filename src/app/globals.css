@@ -11,6 +11,14 @@
 }
 
 @font-face {
+  font-family: 'Kode Mono';
+  src: url('https://your-cdn.com/fonts/kode-mono.woff2') format('woff2'),
+       url('https://your-cdn.com/fonts/kode-mono.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'SUSE';
   src: url('/fonts/SUSE/static/SUSE-Bold.ttf') format('truetype');
   font-weight: 700;

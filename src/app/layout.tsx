@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Playfair_Display, Kode_Mono , Roboto, Shantell_Sans , McLaren , Handlee } from "next/font/google";
+import { Poppins, Playfair_Display , Roboto, Shantell_Sans , McLaren , Handlee } from "next/font/google";
 import "./globals.css";
 
 // Load Poppins for body text
@@ -15,11 +15,6 @@ const poppins = Poppins({
   variable: '--font-poppins',
 });
 
-const kodeMono = Kode_Mono({
-  subsets: ['latin'],
-  weight: ['400', '700'], // Normal and bold weights
-  variable: '--font-kode',
-});
 
 const mclaren = McLaren({
   subsets: ['latin'],
@@ -62,7 +57,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${poppins.variable} ${playfairDisplay.variable} ${kodeMono.variable} ${roboto.variable} ${shan.variable}`}>
+    <html lang="en" className={`${poppins.variable} ${playfairDisplay.variable} $ ${roboto.variable} ${shan.variable}`}>
       <body className="antialiased bg-background text-foreground font-roboto">
         {children}
       </body>

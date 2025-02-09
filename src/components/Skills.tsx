@@ -18,7 +18,7 @@ export const Skills = () => {
         { title: "SQL", img: "/sql.jpeg" },
         { title: "Java", img: "/java.jpeg" },
         { title: "Rust", img: "/rust1.jpeg" },
-        { title: "Go", img: "/go.jpeg" },
+        { title: "Go", img: "/Go.jpeg" },
         { title: "Tailwind", img: "/tailwind.jpeg" },
         { title: "Docker", img: "/docker.jpeg" },
         { title: "Kubernetes", img: "/kubernetes.jpeg" },
